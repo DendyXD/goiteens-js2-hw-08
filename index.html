@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>HW-8 JS2</title>
+</head>
+<body>
+    <form action="" class="add-student-form">
+        <label for="">Додати студента</label>
+        <input type="text" id="add-student-inp" name="name" placeholder="Введіть ім'я студента">
+        <input type="text" id="add-student-inp" name="surname" placeholder="Введіть прізвище студента">
+        <input type="number" id="add-student-inp" name="age" placeholder="Введіть вік студента">
+        <input type="number" id="add-student-inp" name="year" placeholder="Введіть курс студента">
+        <label for="">Факультет:</label>
+            <select name="faculty">
+                <option value="Інженерія">Інженерія</option>
+                <option value="Економіка">Економіка</option>
+                <option value="Медицина">Медицина</option>
+            </select>
+        <button style="align-self: flex-start;" class="add-student-button" type="button">Відправити</button>
+    </form>
+
+    <form class="delete-student-form" action="">
+        <label for="">Видалити студента</label>
+        <input name="id-to-delete" type="number" placeholder="Введіть айді студента для видалення">
+        <button style="align-self: flex-start;" type="button" class="delete-student-button">Видалити</button>
+    </form>
+
+    <form class="search-student-form" action="">
+        <label for="">Пошук студента</label>
+        <input name="id-to-search" type="number" placeholder="Введіть айді студента для пошуку">
+        <button style="align-self: flex-start;" type="button" class="search-student-button">Пошук</button>
+    </form>
+
+    <table>
+        <caption>Таблиця студентів</caption>
+    <thead>
+    <tr>
+        <th>Ім'я студента</th>
+        <th>Прізвище студента</th>
+        <th>Вік студента</th>
+        <th>Курс студента</th>
+        <th>Факультет студента</th>
+    </tr>
+    </thead>
+    <tbody class="student-list">
+
+    </tbody>
+    </table>
+    <script src="main.js"></script>
+</body>
+</html>
